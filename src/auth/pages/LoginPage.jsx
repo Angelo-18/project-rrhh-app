@@ -12,8 +12,7 @@ import { startGoogleSignIn, startLoginWithEmailPassword } from '../../store/auth
 const formData = {
   email: '',
   password: ''
-}
-
+};
 
 export const LoginPage = () => {
 
@@ -22,12 +21,12 @@ export const LoginPage = () => {
   const dispatch = useDispatch();
   const { email, password, onInputChange } = useForm(formData);
 
-  const isAuthenticating = useMemo( () => status === 'checking', [status]);
+  const isAuthenticating = useMemo( () => status === 'athenticated', [status]);
 
   const onSubmit = ( event ) => {
     event.preventDefault();
 
-    // console.log({ email, password })
+    console.log({ email, password })
     dispatch( startLoginWithEmailPassword({ email, password }) );
   }
 

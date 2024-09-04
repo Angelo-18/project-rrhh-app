@@ -35,9 +35,9 @@ export const ResourceHumanRoutes = () => {
             onClick={(event) => handleMenuOpen(event, setAnchorElAsistencias)}
           >
             Asistencias
-            <IconButton color="inherit" onClick={(event) =>handleMenuOpen(event, setAnchorElAsistencias)}>
+            {/* <IconButton color="inherit" onClick={(event) =>handleMenuOpen(event, setAnchorElAsistencias)}>
               <ExpandMoreIcon />
-            </IconButton>
+            </IconButton> */}
           </Button>
           
           <Menu
